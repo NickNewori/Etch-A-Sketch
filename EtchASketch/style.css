@@ -1,0 +1,12 @@
+#layout {
+   display: flex;
+   border: 4px sandybrown solid;
+   justify-content: center;
+   align-items: center;
+}
+
+#etch-a-sketch {
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: 900;
+}
