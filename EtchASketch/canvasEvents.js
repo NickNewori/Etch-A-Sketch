@@ -155,4 +155,16 @@ for (let i = 0; i < 16; i++) {
     content.style.height = '25px';
     content.style.width = '25px';
     container16.appendChild(content);
+    content.addEventListener("mouseover", () => {
+        content.style.backgroundColor = "pink";
+        console.log("yippe");
+    }) 
 }
+
+// const pen = document.getElementsByClassName('content');
+// if (pen) {
+//     pen.addEventListener('mouseover', (event) => {
+//         event.target.style.color = "pink";
+//     })
+// }
+
