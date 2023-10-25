@@ -23,9 +23,25 @@
     /* flex-flow: row wrap; */
 }
 
+#test {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: center;
+    width: 450px;
 
-.content:hover {
-    
-    color: aqua;
 }
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resetButton {
+    width: 100px;
+    height: 50px;
+}
+
 
