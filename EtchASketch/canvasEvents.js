@@ -1,184 +1,64 @@
-// const container = document.querySelector('#container');
+// Initial size of grid
+let sizeOfBoard = 16;
 
-// // Create the 16x16 grid on each line
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container.appendChild(content);
-// }
-// const container2 = document.querySelector('#container2');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container2.appendChild(content);
-// }
-// const container3 = document.querySelector('#container3');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container3.appendChild(content);
-// }
-
-// const container4 = document.querySelector('#container4');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container4.appendChild(content);
-// }
-
-// const container5 = document.querySelector('#container5');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container5.appendChild(content);
-// }
-
-// const container6 = document.querySelector('#container6');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container6.appendChild(content);
-// }
-
-// const container7 = document.querySelector('#container7');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container7.appendChild(content);
-// }
-
-// const container8 = document.querySelector('#container8');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container8.appendChild(content);
-// }
-
-// const container9 = document.querySelector('#container9');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container9.appendChild(content);
-// }
-
-// const container10 = document.querySelector('#container10');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container10.appendChild(content);
-// }
-
-// const container11 = document.querySelector('#container11');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container11.appendChild(content);
-// }
-
-// const container12 = document.querySelector('#container12');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container12.appendChild(content);
-// }
-
-// const container13 = document.querySelector('#container13');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container13.appendChild(content);
-// }
-
-// const container14 = document.querySelector('#container14');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container14.appendChild(content);
-// }
-
-// const container15 = document.querySelector('#container15');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container15.appendChild(content);
-// }
-// const container16 = document.querySelector('#container16');
-// for (let i = 0; i < 16; i++) {
-//     const content = document.createElement('div');
-//     content.classList.add('content');
-//     content.style.border = '1px solid black';
-//     content.style.height = '25px';
-//     content.style.width = '25px';
-//     container16.appendChild(content);
-//     content.addEventListener("mouseover", () => {
-//         content.style.backgroundColor = "pink";
-//         console.log("yippe");
-//     }) 
-// }
-
-// const pen = document.getElementsByClassName('content');
-// if (pen) {
-//     pen.addEventListener('mouseover', (event) => {
-//         event.target.style.color = "pink";
-//     })
-// }
-
-
-const board = document.querySelector('#test');
 // Selected the div test now we want to create 
+// const board = document.querySelector('#test');
+
+// Event listener to check if the user pressed the change
+// canvas size button. If pressed the canvas will 
+// change to be the size of the user input 
+// not exceeding 100.
+var boardS = document.getElementById('boardSize');
+boardS.addEventListener("click", () => {
+    while(true) {
+        sizeOfBoard = prompt("Change size of board. Max Size is 100:");
+        if (sizeOfBoard > 100) {
+            sizeOfBoard = prompt("Change size of board. Max Size is 100:");
+        } else {
+            break;
+        }
+    }
+    // New canvas size 
+    document.getElementById('test').innerHTML = "";
+    for (let i = 0; i < sizeOfBoard; i++) {
+        const content = document.createElement('div');
+        content.classList.add('row');
+        content.style.display = 'flex';
+        // content.style.flex = '1';
+        board.appendChild(content);
+        for (let j = 0; j < sizeOfBoard; j++) {
+            const blocks = document.createElement('div');
+            blocks.classList.add('items');
+            // blocks.style.flex = '1';
+            blocks.style.border = '1px solid black';
+            blocks.style.height = '25px';
+            blocks.style.width = '25px';
+            blocks.addEventListener("mouseover", () => {
+                blocks.style.backgroundColor = colors[Math.floor(Math.random()*colors.length)];
+                // Darkens the block everytime you go over
+                // the same block
+                let cb = blocks.dataset.brightness || 100;
+                cb = parseInt(cb) - 10;
+                if (cb >= 0) {
+                    blocks.style.filter = `brightness(${cb}%)`;
+                    blocks.dataset.brightness = cb;
+                }
+            })
+            board.appendChild(blocks);
+        }
+    }
+    console.log(sizeOfBoard);
+})
+
+const board = document.querySelector("#test");
 // rows of blocks with items to display a 16x16 grid
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < sizeOfBoard; i++) {
     const content = document.createElement('div');
     content.classList.add('row');
     content.style.display = 'flex';
     // content.style.flex = '1';
     board.appendChild(content);
-    for (let j = 0; j < 16; j++) {
+    for (let j = 0; j < sizeOfBoard; j++) {
         const blocks = document.createElement('div');
         blocks.classList.add('items');
         // blocks.style.flex = '1';
@@ -186,12 +66,24 @@ for (let i = 0; i < 16; i++) {
         blocks.style.height = '25px';
         blocks.style.width = '25px';
         blocks.addEventListener("mouseover", () => {
-        blocks.style.backgroundColor = "pink";
-        console.log("yippe");
+        blocks.style.backgroundColor = colors[Math.floor(Math.random()*colors.length)];
+        
+        // Darkens the block everytime you go over
+        // the same block
+        let cb = blocks.dataset.brightness || 100;
+        cb = parseInt(cb) - 10;
+        if (cb >= 0) {
+            blocks.style.filter = `brightness(${cb}%)`;
+            blocks.dataset.brightness = cb;
+        }
+
         })
         board.appendChild(blocks);
     }
 }
+
+const colors = ["red", "green", "blue"];
+
 
 // Creating a function that resets the board
 // to previous clean state
@@ -205,9 +97,10 @@ function resetBoard() {
     // Loop through each item and check if there are color blocks
     // If there is then change the color to default.
     for (let block = 0; block < clearBoard.length; block++) {
-        if (clearBoard[block].style.backgroundColor == 'pink') {
+        if (clearBoard[block].style.backgroundColor == 'red'
+        || clearBoard[block].style.backgroundColor == 'blue'
+        || clearBoard[block].style.backgroundColor == 'green') {
             clearBoard[block].style.backgroundColor = 'white';
-            console.log("if statement works");
         }
     }
 }

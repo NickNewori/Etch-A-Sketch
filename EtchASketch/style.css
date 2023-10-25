@@ -11,15 +11,12 @@
     font-weight: 900;
 }
 
-#container, #container2, #container3, #container4, #container5,
- #container6, #container7, #container8,
-    #container9, #container10, #container11, #container12,
-        #container13, #container14,
-         #container15, #container16 {
+#container {
     display: flex;
     /* border: 4px solid green; */
     justify-content: center;
     flex-direction: row;
+    /* width: 960px; */
     /* flex-flow: row wrap; */
 }
 
@@ -39,9 +36,10 @@
     align-items: center;
 }
 
-#resetButton {
+#resetButton, #boardSize {
     width: 100px;
     height: 50px;
+    /* margin: 5px; */
 }
 
 
