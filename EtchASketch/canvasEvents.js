@@ -24,12 +24,10 @@ boardS.addEventListener("click", () => {
         const content = document.createElement('div');
         content.classList.add('row');
         content.style.display = 'flex';
-        // content.style.flex = '1';
         board.appendChild(content);
         for (let j = 0; j < sizeOfBoard; j++) {
             const blocks = document.createElement('div');
             blocks.classList.add('items');
-            // blocks.style.flex = '1';
             blocks.style.border = '1px solid black';
             blocks.style.height = '25px';
             blocks.style.width = '25px';
@@ -56,12 +54,10 @@ for (let i = 0; i < sizeOfBoard; i++) {
     const content = document.createElement('div');
     content.classList.add('row');
     content.style.display = 'flex';
-    // content.style.flex = '1';
     board.appendChild(content);
     for (let j = 0; j < sizeOfBoard; j++) {
         const blocks = document.createElement('div');
         blocks.classList.add('items');
-        // blocks.style.flex = '1';
         blocks.style.border = '1px solid black';
         blocks.style.height = '25px';
         blocks.style.width = '25px';

@@ -1,6 +1,5 @@
 #layout {
    display: flex;
-   /* border: 4px sandybrown solid; */
    justify-content: center;
    align-items: center;
 }
@@ -13,17 +12,13 @@
 
 #container {
     display: flex;
-    /* border: 4px solid green; */
     justify-content: center;
     flex-direction: row;
-    /* width: 960px; */
-    /* flex-flow: row wrap; */
 }
 
 #test {
     display: flex;
     justify-content: center;
-    /* flex-direction: row; */
     flex-wrap: wrap;
     align-items: center;
     width: 450px;
@@ -39,7 +34,6 @@
 #resetButton, #boardSize {
     width: 100px;
     height: 50px;
-    /* margin: 5px; */
 }
 
 
